@@ -1,6 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дмитрий Струнгарь](https://up.htmlacademy.ru/htmlcss/13/user/91396).
+* Наставник: [Александр Половников] (https://up.htmlacademy.ru/htmlcss/13/user/8359).
 
 ---
 
