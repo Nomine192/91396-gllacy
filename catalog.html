@@ -10,18 +10,17 @@
 
  <!--HEADER-->
 
-  	<header>
+  	<header class="main-header">
   		<div class="container clearfix">
   		<div class="logo"><img src="img/logo.svg" alt=""></div>
-  			<nav class="menu">
-  				<ul class="menu-list">
-  					<li class="menu-item"><a href="#">каталог</a></li>
-  					<li class="menu-item"><a href="#">доставка и оплата</a></li>
-  					<li class="menu-item"><a href="#">о компании</a></li>
+  			<nav class="main-navigation">
+  				<ul>
+  					<li><a href="catalog.html">Каталог</a></li>
+  					<li><a href="#">Доставка и оплата</a></li>
+  					<li><a href="#">О Компании</a></li>
   				</ul>
   			</nav>
   			<div class="search">
-  				<input type="search">
   				<img src="img/search.svg" alt="">
   				<a href="#">вход</a>
   				<img src="img/entrance.svg" alt="">
@@ -35,24 +34,26 @@
 	<!--BREADCRUMBS-->
 
   	<div class="breadcrumbs">
-  		<div class="container">
+  		<div class="container clearfix">
 			<ul class="menu-list">
 				<li class="menu-item"><a href="#">главная</a></li>
 				<li class="menu-item"><a href="#">каталог</a></li>
 				<li class="menu-item"><a href="#">сливочное</a></li>
 			</ul>
-			<p>с 10 до 20, ежедневно</p>
-			<span>8 812 450-25-25</span>
+			<div class="job">
+				<p>с 10 до 20, ежедневно</p>
+				<a href="tel:+78124502525">8 812 450-25-25</a>
+			</div>
   		</div>
   	</div>
 
   	<!--SORTING КОНФИГУРАТОР+ВИДЫ МОРОЖЕННОГО-->
 
   	<div class="modal-sorting">
-		<div class="container">
-	  		<h1 class="sorting-text">сливочное мороженое</h1>
+		<div class="container clearfix">
+	  		<h1 class="sorting-text">Сливочное мороженое</h1>
 	  		<p>сортировать:</p>
-	  		<select name="" id="sorting">
+	  		<select name="" class="sorting">
 	  			<option value="по популярности">по популярности</option>
 	  		</select>
 			<p>цена: 100 руб.-500 руб.</p>
@@ -154,7 +155,7 @@
 	  				<p class="price">420<span>р</span>/кг</p>
 	  				<span class="description">сливочное с мятным сиропом</span>
 	  			</article>	
-				<div class="link">
+				<div class="linked">
 		  			<a href="#">1</a>
 		  			<a href="#">2</a>
 		  			<a href="#">3</a>
@@ -167,24 +168,26 @@
 	
 	<!--FOOTER-->
 	
-  		<footer>
-  			<div class="modal-social">
-  				<a href="#" class="tw">&nbsp;</a>
-  				<a href="#" class="ins">&nbsp;</a>
-  				<a href="#" class="fv">&nbsp;</a>
-  				<a href="#" class="vk">&nbsp;</a>
-  			</div>
-  			<div class="info">
-	  			<a href=""><span>для поставщиков</span></a>
-	  			<a href=""><p>наши документы</p></a>
-	  			<a href=""><p>о производстве</p></a>
-	  			<a href=""><p>экологические стандарты</p></a>
-  			</div>
-  			<div class="htmlacademy">
-  				<a href=""><img src="#" alt="htmlacademy"></a>
-  				<p class="htmlacademy-text">htmlacademy</p>
-  				<p class="made-text">сделано в HTML Academy 2016</p>
-  			</div>
-  		</footer> 	
+   		<footer>
+        <div class="container clearfix">
+    			<div class="modal-social">
+    				<a href="#" class="tw">&nbsp;</a>
+    				<a href="#" class="ins">&nbsp;</a>
+    				<a href="#" class="fv">&nbsp;</a>
+    				<a href="#" class="vk">&nbsp;</a>
+    			</div>
+    			<div class="info">
+  	  			<a href=""><p>для поставщиков</p></a>
+  	  			<a href=""><p>наши документы</p></a>
+  	  			<a href=""><p>о производстве</p></a>
+  	  			<a href=""><p>экологические стандарты</p></a>
+    			</div>
+    			<div class="htmlacademy">
+    				<a href=""><img src="#" alt="htmlacademy"></a>
+    				<p class="htmlacademy-text">htmlacademy</p>
+    				<p class="made-text">сделано в HTML Academy 2016</p>
+    			</div>
+        </div>
+  		</footer>
 </body>
 </html>
