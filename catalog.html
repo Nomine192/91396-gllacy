@@ -3,42 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
  <!--HEADER-->
 
-  	<header class="main-header">
-  		<div class="container clearfix">
-  		<div class="logo"><img src="img/logo.svg" alt=""></div>
-  			<nav class="main-navigation">
-  				<ul>
-  					<li><a href="catalog.html">Каталог</a></li>
-  					<li><a href="#">Доставка и оплата</a></li>
-  					<li><a href="#">О Компании</a></li>
-  				</ul>
-  			</nav>
-  			<div class="search">
-  				<img src="img/search.svg" alt="">
-  				<a href="#">вход</a>
-  				<img src="img/entrance.svg" alt="">
-  				<a href="#">пусто</a>
-		        <img src="img/maskit.svg" alt="">
-		        <a href="#">пусто</a>
-  			</div>
-  		</div>
-  	</header>
+    <header class="main-header">
+        <div class="container clearfix">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Доставка и оплата</a></li>
+                    <li><a href="">О Компании</a></li>
+                </ul>
+            </nav>
+            <div class="header-icon">
+                <a href="" class="search"></a>
+                <a href="" class="login">Вход</a>
+                <a href="" class="buy">Пусто</a>
+            </div>
+        </div>
+    </header>
 
 	<!--BREADCRUMBS-->
 
   	<div class="breadcrumbs">
   		<div class="container clearfix">
 			<ul class="menu-list">
-				<li class="menu-item"><a href="#">главная</a></li>
-				<li class="menu-item"><a href="#">каталог</a></li>
-				<li class="menu-item"><a href="#">сливочное</a></li>
+				<li><a href="#">главная</a></li>
+				<li><a href="#">каталог</a></li>
+				<li><a href="#">сливочное</a></li>
 			</ul>
 			<div class="job">
 				<p>с 10 до 20, ежедневно</p>
@@ -52,142 +52,175 @@
   	<div class="modal-sorting">
 		<div class="container clearfix">
 	  		<h1 class="sorting-text">Сливочное мороженое</h1>
-	  		<p>сортировать:</p>
+	  		<div class="sorting">
+	  		<p>сортировка:</p>
 	  		<select name="" class="sorting">
 	  			<option value="по популярности">по популярности</option>
 	  		</select>
+	  		</div>
+
+	  		<div class="price-buy">
 			<p>цена: 100 руб.-500 руб.</p>
 	  		<input type="range" min="110" max="500" step="1" value="50">
+	  		</div>
+
+	  		<div class="fatness">
 	  		<p>жирность:</p>
 			<label for="zero"><input type="radio" name="fatness" value="rad1" id="zero">0%</label>
 			<label for="ten"><input type="radio" name="fatness" value="rad2" id="ten">до 10%</label>
 			<label for="thirty"><input type="radio" name="fatness" value="rad3" id="thirty">до 30%</label>
 			<label for="higher"><input type="radio" name="fatness" value="rad4" id="higher">выше 30%</label>
+			</div>
+
+			<div class="filler">
 			<p>наполнители</p>
 			<label for="chocolate"><input type="checkbox" id="chocolate">шоколадные</label>
 			<label for="sugar"><input type="checkbox" id="sugar">сахарные присыпки</label>
 			<label for="fruit"><input type="checkbox" id="fruit">фрукты</label>
 			<label for="syrup"><input type="checkbox" id="syrup">сиропы</label>
 			<label for="джем"><input type="checkbox" id="джем">джемы</label>
-			<button class="btn">применить</button>
+			</div>
+			<button class="btn-sorting">применить</button>
+		</div>
+  	</div>
 
-			<div class="ice-cream">
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">310<span>р</span>/кг</p>
-	  				<span class="description">сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">380<span>р</span>/кг</p>
-	  				<span class="description">сливочно-кофейное с кусочками шоколада</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">355<span>р</span>/кг</p>
-	  				<span class="description">сливочно-клубничное с присыпкой из белого шоколада</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">415<span>р</span>/кг</p>
-	  				<span class="description">сливочное крем-брюле с карамельной подливой</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">325<span>р</span>/кг</p>
-	  				<span class="description">сливочное с брусничным джемом</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">410<span>р</span>/кг</p>
-	  				<span class="description">сливочно-черничное с цельными ягодами черники</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">375<span>р</span>/кг</p>
-	  				<span class="description">сливочно-лимонное с карамельной присыпкой</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">320<span>р</span>/кг</p>
-	  				<span class="description">сливочное с шоколадной стружкой</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">440<span>р</span>/кг</p>
-	  				<span class="description">сливочно-ванильное с кусочками шоколада</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">435<span>р</span>/кг</p>
-	  				<span class="description">сливочное с ментоловым сиропом</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">355<span>р</span>/кг</p>
-	  				<span class="description">сливочное с кусочками черного шоколада</span>
-	  			</article>
-
-	  			<article>
-	  				<img src="http://placehold.it/150x100" alt="">
-	  				<div class="hit">хит</div>
-	  				<p class="price">420<span>р</span>/кг</p>
-	  				<span class="description">сливочное с мятным сиропом</span>
-	  			</article>	
-				<div class="linked">
+                <div class="ice-cream">
+                    <div class="container clearfix">
+                        <article>
+                            <img src="img/icecream1.jpg" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">310<span>р</span>/кг</p>
+                            <p class="description">сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                        </article>
+                        <article>
+                            <img src="img/icecream2.jpg" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">380<span>р</span>/кг</p>
+                            <p class="description">сливочно-кофейное с кусочками шоколада</p>
+                        </article>
+                        <article>
+                            <img src="img/icecream3.jpg" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">355<span>р</span>/кг</p>
+                            <p class="description">сливочно-клубничное с присыпкой из белого шоколада</p>
+                        </article>
+                        <article>
+                            <img src="img/icecream4.jpg" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">415<span>р</span>/кг</p>
+                            <p class="description">сливочное крем-брюле с карамельной подливой</p>
+                        </article>
+                        <article>
+                            <img src="img/1.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">310<span>р</span>/кг</p>
+                            <p class="description">Сливочное с брусничным <br>джемом </p>
+                        </article>
+                        <article>
+                            <img src="img/2.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">380<span>р</span>/кг</p>
+                            <p class="description">Сливочно-черничное с цельными ягодами черники </p>
+                        </article>
+                        <article>
+                            <img src="img/3.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">355<span>р</span>/кг</p>
+                            <p class="description">Сливочно-лимонное с карамельной присыпкой</p>
+                        </article>
+                        <article>
+                            <img src="img/4.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">415<span>р</span>/кг</p>
+                            <p class="description">Сливочное с шоколадной стружкой</p>
+                        </article>
+                                                <article>
+                            <img src="img/11.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">310<span>р</span>/кг</p>
+                            <p class="description">Сливочно-ванильное с кусочками шоколада </p>
+                        </article>
+                        <article>
+                            <img src="img/21.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">380<span>р</span>/кг</p>
+                            <p class="description">Сливочноe с ментоловым сиропом</p>
+                        </article>
+                        <article>
+                            <img src="img/31.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">355<span>р</span>/кг</p>
+                            <p class="description">Сливочное с кусочками черного шоколада</p>
+                        </article>
+                        <article>
+                            <img src="img/41.png" alt="">
+                            <div class="hit">
+                                <p>хит</p>
+                            </div>
+                            <p class="price">415<span>р</span>/кг</p>
+                            <p class="description">Сливочное с мятным <br>сиропом</p>
+                        </article>
+                    <div class="linked">
 		  			<a href="#">1</a>
 		  			<a href="#">2</a>
 		  			<a href="#">3</a>
 		  			<a href="#">4</a>
 		  			<a href="#">5</a>  			
 				</div>
-	  		</div> 
-		</div>
-  	</div>
+                    </div>
+                </div>                 
 	
 	<!--FOOTER-->
-	
-   		<footer>
-        <div class="container clearfix">
-    			<div class="modal-social">
-    				<a href="#" class="tw">&nbsp;</a>
-    				<a href="#" class="ins">&nbsp;</a>
-    				<a href="#" class="fv">&nbsp;</a>
-    				<a href="#" class="vk">&nbsp;</a>
-    			</div>
-    			<div class="info">
-  	  			<a href=""><p>для поставщиков</p></a>
-  	  			<a href=""><p>наши документы</p></a>
-  	  			<a href=""><p>о производстве</p></a>
-  	  			<a href=""><p>экологические стандарты</p></a>
-    			</div>
-    			<div class="htmlacademy">
-    				<a href=""><img src="#" alt="htmlacademy"></a>
-    				<p class="htmlacademy-text">htmlacademy</p>
-    				<p class="made-text">сделано в HTML Academy 2016</p>
-    			</div>
-        </div>
-  		</footer>
+
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <div class="modal-social">
+                    <a href="#" class="tw"></a>
+                    <a href="#" class="ins"></a>
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="vk"></a>
+                </div>
+                <div class="info">
+                    <a href="" class="heart">
+                        Для поставщиков
+                    </a>
+                    <a href="">
+                        Наши документы
+                    </a>
+                    <a href="">
+                        О производстве
+                    </a>
+                    <a href="">
+                        Экологические стандарты
+                    </a>
+                </div>
+                <div class="htmlacademy">
+                    <a href=""><img src="img/html.png" alt="htmlacademy"></a>
+                    <p>Сделано в <span>HTML Academy</span> 2016</p>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
