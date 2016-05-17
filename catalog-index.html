@@ -11,33 +11,78 @@
 
  <!--HEADER-->
 
-    <header class="main-header">
-        <div class="container clearfix">
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
+        <header class="main-header">
+            <div class="container clearfix">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                        <a href="catalog.html" class="directory">Каталог</a>
+                            <div class="catalog-main">
+                                <ul>
+                                    <li><a href="" class="news">Новинки</a></li>
+                                    <li><a href="gllacy-catalog.html">Сливочное</a></li>
+                                    <li><a href="">Щербеты</a></li>
+                                    <li><a href="">Фруктовый лед</a></li>
+                                    <li><a href="">Мелорин</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li><a href="">Доставка и оплата</a></li>
+                        <li><a href="">О Компании</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icon">
+                    <div class="search">
+                        <div class="search-main">
+                            <input type="text" placeholder="Что ищем?">
+                        </div>
+                    </div>
+                    <div class="login">Вход
+                        <div class="form-main">
+                            <form action="">
+                                <input type="email" placeholder="Электронная почта">
+                                <input type="password" placeholder="Пароль">
+                                <buttom class="btn-login">Войти</buttom>
+                                <a href="">Забыли пароль? <br>Новая регистрация</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="buy-full">2 Товара
+                        <div class="buy-main">
+                            <div class="orange">
+                                <img src="img/orange.png" alt="">
+                                <p class="name-cream">Пломбир с апельсиновым джемом</p>
+                                <p>1,5 кг х <span>200 руб.</span></p>
+                                <p>300 руб</p>
+                            </div>
+                            <div class="strawberry">
+                                <img src="img/Strawberry.png" alt="">
+                                <p class="name-cream">Клубничный пломбир с присыпкой  из белого шоколада</p>
+                                <p>1,5 кг х <span>200 руб.</span></p>
+                                <p>300 руб</p>
+                            </div>
+                            <div class="buy-main-price">
+                            <span class="buy-price">Итого: 750</span>
+                            <button class="btn-cream">Оформить заказ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="main-navigation">
-                <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">Доставка и оплата</a></li>
-                    <li><a href="">О Компании</a></li>
-                </ul>
-            </nav>
-            <div class="header-icon">
-                <a href="" class="search"></a>
-                <a href="" class="login">Вход</a>
-                <a href="" class="buy">Пусто</a>
-            </div>
-        </div>
-    </header>
+        </header>
+
 
 	<!--BREADCRUMBS-->
 
   	<div class="breadcrumbs">
   		<div class="container clearfix">
 			<ul class="menu-list">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Каталог</a></li>
+				<li><a href="index.html">Главная</a></li>
+				<li class="active"><a href="">Каталог</a></li>
 				<li><a href="#">Сливочное</a></li>
 			</ul>
 			<div class="job">
@@ -59,7 +104,7 @@
                 </div>
 
                 <div class="range-filter">
-                    <p class="cost">Цена: 100 руб. — 500 руб.</p>
+                    <p class="cost">Цена: 100 руб. – 500 руб.</p>
                     <div class="range-controls">
                         <div class="scale">
                             <div class="bar" style="margin-left: 20%; width: 45%"></div>
@@ -73,30 +118,33 @@
             <div class="fatness">
                 <p class="fatness-text">Жирность:</p>
                 <div class="fatness-main">
-                    <input type="checkbox">
-                    <label for="">0%</label>
-                    <input type="checkbox">
-                    <label for="">до 10%</label>
-                    <input type="checkbox">
-                    <label for="">до 30%</label>
-                    <input type="checkbox">
-                    <label for="">выше 30%</label>
+                    <input type="radio" name="number" value="zero" id="zero">
+                    <label for="zero">0%</label>
+
+                    <input type="radio" name="number" value="ten" id="ten">
+                    <label for="ten">до 10%</label>
+
+                    <input type="radio" name="number" value="third" id="third">
+                    <label for="third">до 30%</label>
+
+                    <input type="radio" name="number" value="more-third" id="more-third">
+                    <label for="more-third">выше 30%</label>
                 </div>
             </div>
 
             <div class="fillers">
                 <p class="fillers-text">Наполнители:</p>
                 <div class="fillers-main">
-                    <input type="checkbox">
-                    <label for="">шоколадные</label>
-                    <input type="checkbox">
-                    <label for="">сахарные присыпки</label>
-                    <input type="checkbox">
-                    <label for="">фрукты</label>
-                    <input type="checkbox">
-                    <label for="">сиропы</label>
-                    <input type="checkbox">
-                    <label for="">джемы</label>
+                    <input type="checkbox" id="chocolade">
+                    <label for="chocolade">шоколадные</label>
+                    <input type="checkbox" id="sugar">
+                    <label for="sugar">сахарные присыпки</label>
+                    <input type="checkbox" id="fruit">
+                    <label for="fruit">фрукты</label>
+                    <input type="checkbox" id="syrup">
+                    <label for="syrup">сиропы</label>
+                    <input type="checkbox" id="jam">
+                    <label for="jam">джемы</label>
                 </div>
             </div>
             <button class="btn-filters">Применить</button>
@@ -105,44 +153,44 @@
   	<!--SORTING КОНФИГУРАТОР+ВИДЫ МОРОЖЕННОГО-->
         <div class="icecream-catalog">
                     <div class="container clearfix">
-                <article>
+                                <article>
                     <img src="img/icecream1.jpg" alt="Мороженное">
-                    <p class="price">310 &#8381;<span class="mass">кг</span></p>
+                    <p class="price">310&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
 
                 <article>
                     <img src="img/icecream2.jpg" alt="Мороженное">
-                    <p class="price">380 &#8381;<span class="mass">кг</span></p>
+                    <p class="price">380&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочно-кофейное с кусочками шоколада</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
 
                 <article>
                     <img src="img/icecream3.jpg" alt="Мороженное">
-                    <p class="price">355 &#8381;<span class="mass">кг</span></p>
+                    <p class="price">355&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
 
                 <article>
                     <img src="img/icecream4.jpg" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
-                    <p class="description"><span>Сливочное крем-брюле с карамельной подливой</span></p>
+                    <p class="price">415&#8381;<span class="mass">/кг</span></p>
+                    <p class="description"><span>Сливочное крем-брюле с карамельной подливкой</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
 
                 <article>
                     <img src="img/1.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">325&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочное с брусничным джемом</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
 
                 <article>
                     <img src="img/2.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">410&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочно-черничное с цельными ягодами черники 
                     </span></p>
                     <button class="btn-speed">быстрый просмотр</button>
@@ -150,7 +198,7 @@
 
                 <article>
                     <img src="img/3.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">375&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочно-лимонное с карамельной присыпкой</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
@@ -158,7 +206,7 @@
 
                 <article>
                     <img src="img/4.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">320&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочное с шоколадной стружкой</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
@@ -166,7 +214,7 @@
 
                 <article>
                     <img src="img/11.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">440&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочно-ванильное с кусочками шоколада</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
@@ -174,7 +222,7 @@
 
                 <article>
                     <img src="img/21.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">435&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочное с ментоловым сиропом</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
@@ -182,7 +230,7 @@
 
                 <article>
                     <img src="img/31.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">355&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочное с кусочками черного шоколада</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
@@ -190,7 +238,7 @@
 
                 <article>
                     <img src="img/41.png" alt="Мороженное">
-                    <p class="price">415 &#8381;/<span class="mass">кг</span></p>
+                    <p class="price">420&#8381;<span class="mass">/кг</span></p>
                     <p class="description"><span>Сливочное с мятным сиропом</span></p>
                     <button class="btn-speed">быстрый просмотр</button>
                 </article>
