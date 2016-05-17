@@ -13,8 +13,8 @@ body > input[type="radio"] {
     display: none;
 }
 
-.clearfix::before,
-.clearfix::after {
+.clearfix:before,
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -279,7 +279,7 @@ body > input[type="radio"] {
     z-index: 1;
 }
 
-.login::before {
+.login:before {
     content: " ";
     position: absolute;
     top: 5px;
@@ -409,7 +409,7 @@ body > input[type="radio"] {
     color: #323232;
 }
 
-.buy::before {
+.buy:before {
     content: " ";
     position: absolute;
     top: 5px;
@@ -439,7 +439,7 @@ body > input[type="radio"] {
     border-radius: 20px;
 }
 
-.buy-full::before {
+.buy-full:before {
     content: " ";
     position: absolute;
     top: 5px;
@@ -937,7 +937,10 @@ article img {
     line-height: 45px;
     font-weight: 900;
 }
-
+.re {
+    display: block;
+    margin-top: 4px;
+}
 .mass {
     margin-left: 4px;
     font-size: 30px;
@@ -1261,7 +1264,7 @@ article img {
     margin-right: 0;
 }
 
-.tw::before {
+.tw:before {
     content: " ";
     position: absolute;
     top: -1px;
@@ -1271,7 +1274,7 @@ article img {
     background: transparent url("../img/tw.png") no-repeat;
 }
 
-.ins::before {
+.ins:before {
     content: " ";
     position: absolute;
     top: -1px;
@@ -1281,7 +1284,7 @@ article img {
     background: transparent url("../img/ins.png") no-repeat;
 }
 
-.fb::before {
+.fb:before {
     content: " ";
     position: absolute;
     top: -1px;
@@ -1291,7 +1294,7 @@ article img {
     background: transparent url("../img/fb.png") no-repeat;
 }
 
-.vk::before {
+.vk:before {
     content: " ";
     position: absolute;
     top: -1px;
@@ -1367,7 +1370,7 @@ article img {
     margin-bottom: 0;
 }
 
-.heart::before {
+.heart:before {
     content: " ";
     position: absolute;
     top: 3.5px;
@@ -1450,12 +1453,12 @@ article img {
     text-decoration: none;
 }
 
-.menu-list a::after {
+.menu-list a:after {
     content: "»";
-    margin-left: 10px;
+    margin-left: -8px;
 }
 
-.menu-list a::after:last-child {
+.menu-list a:after:last-child {
     content: "";
 }
 
@@ -1646,7 +1649,7 @@ article img {
 }
 
 .fatness-main input[type="radio"]:checked+label:before {
-    background: url("../img/circle.png") -1.5px -2.5px;
+    background: url("../img/circle.png") -2px -2.6px;
 }
 
 .fatness-main label:hover:before {
@@ -1803,8 +1806,8 @@ input[type="checkbox"]:checked+label:before {
     cursor: pointer;
 }
 
-.modal-content-close::before,
-.modal-content-close::after {
+.modal-content-close:before,
+.modal-content-close:after {
     content: "";
     position: absolute;
     top: 6px;
@@ -1815,11 +1818,11 @@ input[type="checkbox"]:checked+label:before {
     border-radius: 1px;
 }
 
-.modal-content-close::before {
+.modal-content-close:before {
     transform: rotate(45deg);
 }
 
-.modal-content-close::after {
+.modal-content-close:after {
     transform: rotate(-45deg);
 }
 
